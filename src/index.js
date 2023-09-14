@@ -21,7 +21,7 @@ const store = createStore(rootReducer);
 ReactDOM.render(
     <Provider store={ store }>
         <Router>
-            {/* <Header /> */}
+            <Header />
             <Routes>
                 <Route exact path="/" element={<Auth />} />
                 <Route exact path="/memberprofile" element={<MemberProfile />} />

@@ -1,0 +1,34 @@
+/* .member-header-elements */
+.member-header-elements {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1800px;
+  background-color: rgb(63, 63, 63);
+  margin: -8px -18px;
+}
+
+/* .member-header-elements .button */
+.member-header-elements .button {
+  background: transparent;
+  color: white;
+  font-size: 13.75px;
+}
+
+/* .member-header-elements .button:hover */
+.member-header-elements .button:hover {
+  color: #57a957;
+  text-decoration: underline;
+}
+
+/* .confirm-element */
+.auth-elements .confirm-element {
+  margin-top: 20px;
+}
+
+/* Media Query for button */
+@media (min-width: 576px) {
+  /* .member-header-elements .button */
+  .member-header-elements .button {
+    font-size: 18px !important;
+  }
+}

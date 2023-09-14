@@ -1,9 +1,12 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
-
-const MemberProfile = ({}) => (
-    <div>Member Profile</div>
+const MemberProfile = ({userinfo}) => (
+    <div>{userinfo.userId} {userinfo.userRole}</div>
 )
 
+const mapStateToProps = state => ({
+    userinfo: state.userinfo
+})
 
-export default MemberProfile;
+export default connect(mapStateToProps)(MemberProfile);

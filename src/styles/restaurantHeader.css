@@ -1,0 +1,29 @@
+/* .restaurant-header-elements */
+.restaurant-header-elements {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1800px;
+  background-color: rgb(63, 63, 63);
+  margin: -8px -18px auto;
+}
+
+/* .restaurant-header-elements .button */
+.restaurant-header-elements .button {
+  background: transparent;
+  color: white;
+  font-size: 13.75px;
+}
+
+/* .restaurant-header-elements .button:hover */
+.restaurant-header-elements .button:hover {
+  color: #57a957;
+  text-decoration: underline;
+}
+
+/* Media Query for button */
+@media (min-width: 576px) {
+  /* .restaurant-header-elements .button */
+  .restaurant-header-elements .button {
+    font-size: 18px !important;
+  }
+}
