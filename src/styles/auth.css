@@ -1,0 +1,23 @@
+.auth-elements {
+  padding: 2% 0;
+  width: 320px;
+  margin: auto;
+  border: 1px solid;
+  margin-top: 10%;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.auth-elements .button-element {
+  margin-top: 20px;
+}
+
+.auth-elements .confirm-element {
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .auth-elements {
+    width: 80%;
+  }
+}

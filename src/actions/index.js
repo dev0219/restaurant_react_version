@@ -10,3 +10,8 @@ export const updateItem = id => ({
     type: 'UPDATE_ITEM',
     id
 });
+
+export const addUser = (payload) => ({
+    type: 'ADD_USER',
+    payload: payload
+});

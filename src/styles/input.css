@@ -1,0 +1,26 @@
+.input-element {
+  margin-top: -10px;
+}
+
+.input-element input {
+  width: 300px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 10px 0;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.input-element input:focus {
+  border-color: #57a957;
+  box-shadow: 0 0 8px 0 #57a957;
+}
+
+@media (min-width: 576px) {
+  .input-element input {
+    width: 450px;
+    font-size: 24px;
+  }
+}

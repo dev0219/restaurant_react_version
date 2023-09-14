@@ -1,0 +1,12 @@
+@media (min-width: 576px) {
+  h3 {
+    font-family: Electrolize, sans serif;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 576px) {
+  h3 {
+    font-size: 44px;
+  }
+}
