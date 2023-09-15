@@ -36,25 +36,21 @@ const Auth = ({dispatch}) => {
                     let userObj = {userId: loginResult.data.result.id, userRole: loginResult.data.result.role};
                     dispatch(addUser(userObj));
                     localStorage.setItem("userinfo", JSON.stringify(userObj));
-                    setTimeout(() => {
-                      if (loginResult.data.result.role == 2) {
-                        navigate('/restaurantprofile');
-                      } else {
-                        navigate('/memberprofile');
-                      }
-                    }, 2000);
+                    if (loginResult.data.result.role == 2) {
+                      navigate('/restaurantprofile');
+                    } else {
+                      navigate('/memberprofile');
+                    }
                 } else if (loginResult.data.result.status == 3) {
                     setConfirmStatus("You are new user in this system!")
                     let userObj = {userId: loginResult.data.result.id, userRole: loginResult.data.result.role};
                     dispatch(addUser(userObj));
                     localStorage.setItem("userinfo", JSON.stringify(userObj));
-                    setTimeout(() => {
-                      if (loginResult.data.result.role == 2) {
-                        navigate('/restaurantprofile');
-                      } else {
-                        navigate('/memberprofile');
-                      }
-                    }, 2000);
+                    if (loginResult.data.result.role == 2) {
+                      navigate('/restaurantprofile');
+                    } else {
+                      navigate('/memberprofile');
+                    }
                 }
             }
 
