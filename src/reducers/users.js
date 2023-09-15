@@ -4,8 +4,6 @@ const initialState = {
 }
 
 const userinfo = (state = initialState, action) => {
-    console.log("--- action payload");
-    console.log(action);
     switch (action.type) {
         case 'LOGIN_USER':
             return {

@@ -16,3 +16,13 @@ export const addUser = (payload) => ({
     userId: payload.userId,
     userRole: payload.userRole
 });
+
+export const handleStoreConfirm = (payload) => ({
+    type: 'STORE_CONFIRM',
+    storConfirm: payload
+});
+
+export const handleCreateConfirm = (payload) => ({
+    type: 'CREATE_CONFIRM',
+    is_created: payload
+});

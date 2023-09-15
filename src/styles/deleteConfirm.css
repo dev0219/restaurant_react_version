@@ -1,0 +1,36 @@
+/* .delete-confirm-element */
+.delete-confirm-element {
+  background: white;
+  font-size: 14px;
+  width: 300px;
+  border: 1px solid;
+  margin: auto;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid;
+  max-width: 400px;
+  color: black;
+  margin-top: 10px;
+}
+
+/* .delete-confirm-element .delete-actions */
+.delete-confirm-element .delete-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* .delete-confirm-element .delete-content */
+.delete-confirm-element .delete-content {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Media Query for delete-confirm-element */
+@media (min-width: 576px) {
+  /* .delete-confirm-element */
+  .delete-confirm-element {
+    width: 400px;
+  }
+}

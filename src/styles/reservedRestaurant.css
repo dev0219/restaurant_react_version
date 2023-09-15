@@ -1,0 +1,19 @@
+/* .reserved-elements */
+.reserved-elements {
+  max-width: 500px;
+  margin: auto;
+  text-align: initial;
+  margin-top: 2%;
+}
+
+/* .reserved-elements .button-element .button */
+.reserved-elements .button-element .button {
+  margin-top: 20px;
+  background: red !important;
+  color: white;
+}
+
+/* .reserved-elements .confirm-element */
+.reserved-elements .confirm-element {
+  margin-top: 20px;
+}

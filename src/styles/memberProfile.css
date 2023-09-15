@@ -1,0 +1,29 @@
+/* .member-profile-elements */
+.member-profile-elements {
+  margin-top: 0%;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+/* .member-profile-elements .title-element */
+.member-profile-elements .title-element {
+  margin-top: 2%;
+}
+
+/* .member-profile-elements .confirm-element */
+.member-profile-elements .confirm-element {
+  margin-top: 20px;
+}
+
+/* Media Query for member-profile-elements */
+@media (min-width: 576px) {
+  /* .member-profile-elements */
+  .member-profile-elements {
+    font-size: 26px;
+  }
+
+  /* .member-profile-elements .title-element */
+  .member-profile-elements .title-element {
+    font-size: 60px;
+  }
+}
