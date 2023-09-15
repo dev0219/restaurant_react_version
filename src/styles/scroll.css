@@ -1,0 +1,22 @@
+/* .scroll-button */
+.scroll-button {
+  width: 35px;
+  border: 1px solid;
+  border-radius: 40px;
+  height: 35px;
+  background-color: #57a957;
+  color: rgba(0, 0, 0, 0.668);
+  font-size: 18px;
+  font-weight: 900;
+  border-color: #57a957;
+  position: fixed;
+  right: 5px;
+  bottom: 70px;
+  opacity: 0.65;
+}
+
+/* .scroll-button:hover */
+.scroll-button:hover {
+  opacity: 0.45;
+  transform: scale(1.05);
+}

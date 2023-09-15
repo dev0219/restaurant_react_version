@@ -1,0 +1,12 @@
+.restaurant-details-elements {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 2%;
+  display: grid;
+  place-items: center;
+}
+.detail-object img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+}
