@@ -26,3 +26,8 @@ export const handleCreateConfirm = (payload) => ({
     type: 'CREATE_CONFIRM',
     is_created: payload
 });
+
+export const handleStoreRestaurantInfo = (payload) => ({
+    type: 'STORE_RESTAURANT',
+    restaurant: payload
+});

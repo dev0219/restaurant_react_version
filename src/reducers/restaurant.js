@@ -24,6 +24,11 @@ const restaurntinfo = (state = initialState, action) => {
                 ...state,
                 is_created: action.is_created
             }
+        case 'STORE_RESTAURANT':
+            return {
+                ...state,
+                restaurant: action.restaurant
+            }
         default:
             return state
     }
