@@ -8,16 +8,18 @@ const initialState = {
         days: [],
         userId: "",
     },
-    storConfirm: false,
+    storeConfirm: false,
     is_created: false,
 }
 
-const restaurntinfo = (state = initialState, action) => {
+const restaurantinfo = (state = initialState, action) => {
+    console.log("---ation retaurnt")
+    console.log(action);
     switch (action.type) {
         case 'STORE_CONFIRM':
             return {
                 ...state,
-                storConfirm: action.storConfirm
+                storeConfirm: action.storeConfirm
             }
         case 'CREATE_CONFIRM':
             return {
@@ -34,4 +36,4 @@ const restaurntinfo = (state = initialState, action) => {
     }
 }
 
-export default restaurntinfo;
+export default restaurantinfo;

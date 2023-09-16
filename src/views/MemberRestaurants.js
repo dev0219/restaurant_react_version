@@ -7,7 +7,7 @@ import "../styles/memberRestaurants.css";
 
 const MemberRestaurants = ({}) => {
     return (
-        <div class="member-restaurants-elements">
+        <div className="member-restaurants-elements">
             <TitleComponent title="Available Restaurants" />
             <RestaurantListComponent />
             <Footer />

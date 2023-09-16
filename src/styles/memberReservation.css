@@ -1,0 +1,155 @@
+/* .member-restaurants-elements */
+.member-restaurants-elements {
+  margin-top: 0%;
+  padding-bottom: 60px;
+}
+
+/* .member-restaurants-elements .title-element */
+.member-restaurants-elements .title-element {
+  margin-top: 2%;
+}
+
+/* .member-restaurants-elements h4 */
+.member-restaurants-elements h4 {
+  font-size: 25px;
+}
+
+/* .member-restaurants-elements .reservation-now-actions */
+.member-restaurants-elements .reservation-now-actions {
+  display: flex;
+  margin: auto;
+  max-width: 700px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* .member-restaurants-elements .select-element */
+.member-restaurants-elements .select-element {
+  height: 2.5em;
+  position: relative;
+  display: flex;
+  width: 20em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+/* .member-restaurants-elements .select-element select */
+.member-restaurants-elements .select-element select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #5c6664;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* .member-restaurants-elements .select-element:-ms-expand */
+.member-restaurants-elements .select-element:-ms-expand {
+  display: none;
+}
+
+/* .member-restaurants-elements .select-element::after */
+.member-restaurants-elements .select-element::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+/* .member-restaurants-elements .select-element:hover::after */
+.member-restaurants-elements .select-element:hover::after {
+  color: #23b499;
+}
+
+/* .member-restaurants-elements .select-reservation-date */
+.member-restaurants-elements .select-reservation-date {
+  display: flex;
+  margin: -20px auto auto auto;
+  max-width: 500px;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+/* .member-restaurants-elements .open-day-item */
+.member-restaurants-elements .open-day-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 300px;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* .member-restaurants-elements .open-day-item div */
+.member-restaurants-elements .open-day-item div {
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 5px;
+  background: pink;
+  font-weight: 600;
+}
+
+/* .member-restaurants-elements #confirm */
+.member-restaurants-elements #confirm {
+  margin-top: 20px;
+}
+
+/* .member-restaurants-elements #resbtn */
+.member-restaurants-elements #resbtn {
+  margin-top: 40px;
+}
+
+/* Media Query for member-restaurants-elements (min-width: 576px) */
+@media (min-width: 576px) {
+  /* .member-restaurants-elements .select-reservation-date */
+  .member-restaurants-elements .select-reservation-date {
+    margin: -50px auto auto auto !important;
+  }
+
+  /* .member-restaurants-elements h4 */
+  .member-restaurants-elements h4 {
+    font-size: 50px !important;
+  }
+
+  /* .member-restaurants-elements .open-day-item */
+  .member-restaurants-elements .open-day-item {
+    flex-wrap: nowrap !important;
+    width: 570px !important;
+  }
+
+  /* .member-restaurants-elements .open-day-item div */
+  .member-restaurants-elements .open-day-item div {
+    width: 250px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+}
+
+/* Media Query for member-restaurants-elements (min-width: 768px) */
+@media (min-width: 768px) {
+  /* .member-restaurants-elements .select-seat-element */
+  .member-restaurants-elements .select-seat-element {
+    width: 61% !important;
+  }
+}

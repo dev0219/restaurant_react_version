@@ -19,7 +19,7 @@ export const addUser = (payload) => ({
 
 export const handleStoreConfirm = (payload) => ({
     type: 'STORE_CONFIRM',
-    storConfirm: payload
+    storeConfirm: payload
 });
 
 export const handleCreateConfirm = (payload) => ({

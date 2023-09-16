@@ -10,7 +10,7 @@ import "../styles/memberProfile.css";
 
 import { connect } from 'react-redux';
 
-const MemberProfile = ({dispatch, userinfo, storeConfirm, }) => {
+const MemberProfile = ({dispatch, userinfo, restaurantinfo, }) => {
     const [is_reserved, setIsReserved] = useState(false);
     const [is_deleting, setIsDeleted] = useState(false);
     const [reservedRestaurants, setReservedRestaurants] = useState([]);
@@ -43,7 +43,7 @@ const MemberProfile = ({dispatch, userinfo, storeConfirm, }) => {
 
     useEffect(() => {
         getAllRestaurants();
-        if (storeConfirm) {
+        if (restaurantinfo.storeConfirm) {
             setIsReserved(true);
             setTimeout(() => {
                 setIsReserved(false);
@@ -71,7 +71,7 @@ const MemberProfile = ({dispatch, userinfo, storeConfirm, }) => {
 
 const mapStateToProps = state => ({
     userinfo: state.userinfo,
-    storeConfirm: state.storeConfirm
+    restaurantinfo: state.restaurantinfo
 })
 
 export default connect(mapStateToProps)(MemberProfile);

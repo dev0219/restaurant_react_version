@@ -27,7 +27,7 @@ const CategorySelectorComponent = ({ buttons, activeBtns, onClickCategoryEvent }
       }, [activeBtns]);
 
     return (
-        <div class="button-group">
+        <div className="button-group">
             {buttons.map((btn, index) => {
                 return (
                     <button
