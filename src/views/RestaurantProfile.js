@@ -105,9 +105,9 @@ const RestaurantProfile = ({dispatch,userinfo,restaurantinfo}) => {
                 <ButtonComponent name="Create Restaurant" onClickEvent={handleCreateRestaurant} />
                 <DelButtonComponent name="Profile Delete" onClickEvent={handleDeleteProfile} />
             </div>
-            {restaurants.length && (
-                <UserRestaurantListComponent restaruntArr={restaurants} DelRestaurant={DeleteRestaurant} />
-            )}
+            {restaurants.length? 
+                <UserRestaurantListComponent restaruntArr={restaurants} DelRestaurant={DeleteRestaurant} />:''
+            }
             <Footer />
         </div>
     )

@@ -38,7 +38,7 @@ const ScrollUpComponent = ({}) => {
   return (
     <button
       className={`scroll-button ${showButton ? 'show' : ''}`}
-      onClick={()=>scrollToTop}
+      onClick={scrollToTop}
     >
       ↑
     </button>

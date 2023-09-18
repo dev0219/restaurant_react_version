@@ -87,7 +87,7 @@ const RestaurantCreate = ({dispatch, userinfo}) => {
         <div className="restaurant-profile-elements">
             <TitleComponent title="New Restaurant" />
             <InputTitleComponent name="Restaurant Name" />
-            <InputComponent onInputChange={getRestaurantName} />
+            <InputComponent value={restaurantName} onInputChange={getRestaurantName} />
             <InputTitleComponent name="Please Upload the featured Restaurant Image" />
             <ImageUploaderComponent src={imageValue} getImage={handleImageUpload} />
             <InputTitleComponent name="Category" />

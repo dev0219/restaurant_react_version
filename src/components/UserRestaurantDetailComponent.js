@@ -3,10 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import ButtonComponent from './ButtonComponent';
 import DelButtonComponent from './DelButtonComponent';
 import { handleStoreRestaurantInfo } from '../actions';
+import { connect } from 'react-redux';
 import "../styles/userRestaurantDetail.css";
 
 
-const UserRestaurantDetailComponent = ({ dispatch, id, name,src, categoryName, seats, days, userId ,handleRestaurantDel}) => {
+const UserRestaurantDetailComponent = ({ dispatch, id, name,src, categoryName, seats, days, userId ,handleRestaurantDel, userinfo}) => {
 
     const navigate = useNavigate();
 
@@ -57,5 +58,8 @@ const UserRestaurantDetailComponent = ({ dispatch, id, name,src, categoryName, s
     )    
 }
 
+const mapStateToProps = state => ({
+    userinfo: state.userinfo
+})
 
-export default UserRestaurantDetailComponent;
+export default connect(mapStateToProps)(UserRestaurantDetailComponent);

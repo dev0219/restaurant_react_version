@@ -64,7 +64,7 @@ const Auth = ({dispatch}) => {
     <div className="auth-elements">
         <TitleComponent title="Login" />
         <InputTitleComponent name="User Name" />
-        <InputComponent onInputChange={handleInputValueChange} />
+        <InputComponent value={username} onInputChange={handleInputValueChange} />
         <ButtonComponent name="LOGIN" onClickEvent={handleLoginClick} />
         {islogin?<ConfirmMessageComponent content={confirmstatus} />:''}
     </div>

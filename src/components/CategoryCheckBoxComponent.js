@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import "../styles/categoryCheckbox.css";
 
 
@@ -8,12 +8,20 @@ const CategoryCheckBoxComponent = ({ buttons, value, CheckedCategory }) => {
     const handleCheckboxChange = (event) => {
         const { value: checkboxValue, checked } = event.target;
         if (checked) {
-            setSelectedButtons([...selectedButtons, checkboxValue]);
+          setSelectedButtons((prevSelectedButtons) => [
+            ...prevSelectedButtons,
+            checkboxValue,
+          ]);
         } else {
-            setSelectedButtons(selectedButtons.filter((btnValue) => btnValue !== checkboxValue));
+          setSelectedButtons((prevSelectedButtons) =>
+            prevSelectedButtons.filter((btnValue) => btnValue !== checkboxValue)
+          );
         }
+      };
+    
+      useEffect(() => {
         CheckedCategory(selectedButtons);
-    }
+      }, [selectedButtons]);
     return (
         <div className="checkbox-button-group">
             {buttons.map((button, index) => (

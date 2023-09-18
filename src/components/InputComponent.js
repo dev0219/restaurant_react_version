@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import "../styles/input.css";
 
 
-const InputComponent = ({ onInputChange }) => {
-  const [inputValue, setInputValue] = useState('');
+const InputComponent = ({value, onInputChange }) => {
+  const [inputValue, setInputValue] = useState(value);
 
   const handleInputChange = (e) => {
     const value = e.target.value;
