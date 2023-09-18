@@ -1,0 +1,43 @@
+.restaurant-actions {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 5px;
+}
+.restaurant-details-elements {
+  width: 300px;
+  margin: auto;
+  margin-top: 2%;
+  display: grid;
+  place-items: center;
+}
+
+.category-item {
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+  color: blue;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.rest-img {
+  width: 150px;
+  height: 150px;
+}
+.rest-img img {
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,66 @@
+/* .restaurant-profile-actions */
+.restaurant-profile-actions {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .profile-delete */
+.profile-delete {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 17px;
+  padding-top: 25px;
+}
+
+/* .days-open-element */
+.days-open-element {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .member-profile-elements */
+.member-profile-elements {
+  margin-top: 0%;
+}
+
+/* .member-profile-elements .title-element */
+.member-profile-elements .title-element {
+  margin-top: 2%;
+}
+
+/* .days-item */
+.days-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  background: pink;
+  border-radius: 4px;
+}
+
+/* .days-item:hover */
+.days-item:hover {
+  background: white;
+  color: black;
+}
+
+/* .auth-elements .confirm-element */
+.auth-elements .confirm-element {
+  margin-top: 20px;
+}
+
+/* Media Query for profile-delete (min-width: 576px) */
+@media (min-width: 576px) {
+  /* .profile-delete */
+  .profile-delete {
+    gap: 40px;
+  }
+}
