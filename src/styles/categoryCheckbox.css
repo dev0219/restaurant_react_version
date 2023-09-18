@@ -1,0 +1,58 @@
+/* .checkbox-button-group */
+.checkbox-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  margin: auto;
+  justify-content: center;
+}
+
+/* .checkbox-button */
+.checkbox-button {
+  display: flex;
+  align-items: center;
+}
+
+/* .checkbox-button input[type="checkbox"] */
+.checkbox-button input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Add some styling for selected checkboxes */
+.checkbox-button input[type="checkbox"]:checked + span {
+  font-weight: bold;
+}
+
+/* Media Query for checkbox-button-group (min-width: 576px) */
+@media (min-width: 576px) {
+  /* .checkbox-button-group */
+  .checkbox-button-group {
+    gap: 15px;
+    font-size: 26px;
+  }
+
+  /* .checkbox-button input[type="checkbox"] */
+  .checkbox-button input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Media Query for checkbox-button-group (min-width: 768px) */
+@media (min-width: 768px) {
+  /* .checkbox-button input[type="checkbox"] */
+  .checkbox-button input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Media Query for checkbox-button-group (min-width: 1000px) */
+@media (min-width: 1000px) {
+  /* .checkbox-button-group */
+  .checkbox-button-group {
+    gap: 30px;
+    font-size: 32px;
+  }
+}

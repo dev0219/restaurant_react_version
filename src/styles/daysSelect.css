@@ -1,0 +1,40 @@
+/* .button-group */
+.button-group {
+  display: flex;
+  gap: 3.5px;
+  margin: auto;
+  width: 300px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+/* .button-group button */
+.button-group button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 15.5px;
+}
+
+/* .button-group button.active */
+.button-group button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Media Query for button-group (min-width: 576px) */
+@media (min-width: 576px) {
+  /* .button-group */
+  .button-group {
+    gap: 10px;
+    width: 600px;
+  }
+
+  /* .button-group button */
+  .button-group button {
+    font-size: 24px;
+  }
+}
