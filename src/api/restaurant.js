@@ -1,5 +1,5 @@
 // const apiUrl = "https://fluffy-garbanzo-g949pr65v763pwpj-3000.app.github.dev";
-const apiUrl = "http://localhost:3001";
+const apiUrl = "http://localhost:3000";
 
 // Function to get restaurant data
 export async function createRestaurnt(newObj) {
