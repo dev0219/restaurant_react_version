@@ -1,5 +1,5 @@
 /* .button */
-.button {
+.del-button {
   width: fit-content;
   height: 40px;
   background-color: rgb(231, 127, 127);
@@ -9,25 +9,25 @@
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: Archivo Narrow, sans-serif;
   letter-spacing: 0.095em;
 }
 
 /* .button:hover */
-.button:hover {
+.del-button:hover {
   opacity: 0.5;
   transform: scale(1.03);
 }
 
 /* .button:active */
-.button:active {
+.del-button:active {
   top: 2px;
 }
 
 /* Media Query for button */
 @media (min-width: 576px) {
   /* .button */
-  .button {
+  .del-button {
     padding: 18px 45px;
     height: 60px;
     font-size: 20px;

@@ -17,7 +17,7 @@ const InputComponent = ({value, onInputChange }) => {
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        placeholder="Enter something..."
+        placeholder=""
       />
     </div>    
   );

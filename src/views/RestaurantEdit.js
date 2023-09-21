@@ -89,19 +89,20 @@ const RestaurantEdit = ({dispatch, userinfo, restaurantinfo}) => {
     }
 
     const getRestaurantInfo = () => {
+        let getRetaurantInfo = JSON.parse(
+            localStorage.getItem("restaurantInfo")
+          );
         if (restaurantinfo.restaurant.name == "" || restaurantinfo.restaurant.restaurantImg == "" ) {
-            let getRetaurantInfo = JSON.parse(
-                localStorage.getItem("restaurantInfo")
-              );
+           
             dispatch(handleStoreRestaurantInfo(getRetaurantInfo));
         }
-        setRestaurantName(restaurantinfo.restaurant.name);
-        setImageValue(restaurantinfo.restaurant.restaurantImg);
-        setCategories([...restaurantinfo.restaurant.categories]);
-        setSeats(restaurantinfo.restaurant.seats);
-        setActiveDays([...restaurantinfo.restaurant.days]);
+        setRestaurantName(getRetaurantInfo.name);
+        setImageValue(getRetaurantInfo.restaurantImg);
+        setCategories([...getRetaurantInfo.categories]);
+        setSeats(getRetaurantInfo.seats);
+        setActiveDays([...getRetaurantInfo.days]);
         console.log("---restaurnt informtion");
-        console.log(restaurantinfo.restaurant.name, restaurantName)
+        console.log(getRetaurantInfo.name, restaurantName)
         setIsRender(true)
     }
 

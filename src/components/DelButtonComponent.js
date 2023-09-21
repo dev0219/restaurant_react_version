@@ -8,7 +8,7 @@ const DelButtonComponent = ({ name, onClickEvent }) => {
         onClickEvent();
     }
     return (
-        <button className="button" onClick={() => handleButtonClick()}>{ name }</button>
+        <button className="del-button" onClick={() => handleButtonClick()}>{ name }</button>
     )    
 }
 

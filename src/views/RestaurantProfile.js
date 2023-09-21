@@ -67,14 +67,14 @@ const RestaurantProfile = ({dispatch,userinfo,restaurantinfo}) => {
     }
 
     const getUserRestaurantsLst = async () => {
+        let user = JSON.parse(localUserinfo);
         if (localUserinfo) {
-            if (userinfo.userId == null) {
-                let user = JSON.parse(localUserinfo);
+            if (userinfo.userId == null) {                
                 let userObj = {userId: user.userId, userRole: user.userRole};
                 dispatch(addUser(userObj));
             }
         }
-        let userobj = { userId: userinfo.userId };
+        let userobj = { userId: user.userId };
         const restaurantLst = await getUserRestaurnts(userobj);
         setRestaurants([...restaurantLst.data.results.results])
     }

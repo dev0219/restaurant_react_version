@@ -5,12 +5,13 @@ import TitleComponent from '../components/TitleComponent';
 import ReservedRestaurantComponent from '../components/ReservedRestaurantComponent';
 import Footer from '../components/footer';
 import { getUserReservations, deleteReservation } from "../api/reservation";
-import { handleStoreConfirm } from '../actions';
+import { handleStoreConfirm, addUser } from '../actions';
 import "../styles/memberProfile.css";
 
 import { connect } from 'react-redux';
 
 const MemberProfile = ({dispatch, userinfo, restaurantinfo, }) => {
+    let localUserinfo = localStorage.getItem("userinfo");
     const [is_reserved, setIsReserved] = useState(false);
     const [is_deleting, setIsDeleted] = useState(false);
     const [reservedRestaurants, setReservedRestaurants] = useState([]);
@@ -36,7 +37,8 @@ const MemberProfile = ({dispatch, userinfo, restaurantinfo, }) => {
     }
 
     const getAllRestaurants = async () => {
-        let userobject = { userId: userinfo.userId };
+        let user = JSON.parse(localUserinfo);
+        let userobject = { userId: user.userId };
         const allRestaurantLst = await getUserReservations(userobject);
         setReservedRestaurants([...allRestaurantLst.data.results.results])
     }
